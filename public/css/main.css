@@ -1,0 +1,29 @@
+/*****************************
+          HERO
+******************************/
+.banner-container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 1rem;
+  position: relative;
+}
+
+/*****************************
+          About Me
+******************************/
+
+.responsive-image {
+  max-width: 100%;
+}
+
+.banner-container img {
+  display: block;
+}
+
+/*****************************
+          Icons
+******************************/
+
+.devicons {
+  font-size: 3em;
+}
