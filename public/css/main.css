@@ -14,12 +14,14 @@ body {
           HERO
 ******************************/
 .banner-container {
-  margin: 0 auto;
-  max-width: 1200px;
-  padding: 0 1rem;
   position: relative;
 }
-
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 /*****************************
           About Me
 ******************************/
