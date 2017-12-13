@@ -126,9 +126,10 @@ body {
 }
 .devicons {
   font-size: 3em;
+  color: #8899aa;
 }
 
-.devicons-html5 {
+/*.devicons-html5 {
   color: #e34f26;
 }
 
@@ -151,6 +152,10 @@ body {
 .devicons-mongodb {
   color: #589636;
 }
+
+.devicons-jquery {
+  color: #0769ad;
+}*/
 
 /*****************************
           Projects - Content
