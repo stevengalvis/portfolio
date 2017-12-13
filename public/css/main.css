@@ -10,28 +10,101 @@ body {
   font-family: "Open Sans", serif;
 }
 
+.responsive-image {
+  max-width: 100%;
+}
+
 /*****************************
           HERO
 ******************************/
 .banner-container {
   position: relative;
 }
+
+.banner-container img {
+  display: block;
+}
+
+.hero-content-left {
+  width: 50%;
+}
+
+.hero-content-right {
+  width: 50%;
+}
+
 .hero-content {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+.hero-content-right {
+}
+
+.hero-content-left {
+}
 /*****************************
           About Me
 ******************************/
 
-.responsive-image {
-  max-width: 100%;
+.about-me-header {
+  font-size: 2.7em;
+  max-width: 60em;
+  margin-top: 0;
+  line-height: 1.7;
+  margin: 0 auto;
+  padding-bottom: 0em;
+}
+.about-me-text {
+  font-size: 1.7em;
+  color: #1d1d1d !important;
+  line-height: 1.2em;
+  font-weight: 500;
+  margin: 0 auto;
+  padding-top: 2em;
+  max-width: 20em;
 }
 
-.banner-container img {
-  display: block;
+/*****************************
+          Portfolio Header
+******************************/
+
+.portfolio-header-text {
+  font-size: 4em;
+  color: #1d1d1d !important;
+  line-height: 1.2em;
+  font-weight: 500;
+  margin: 0 auto;
+  padding-top: 0em;
+  max-width: 20em;
+}
+
+/*.portfolio-header-text:before,
+.portfolio-header-text:after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  top: 0;
+  width: 600px;
+}
+
+.portfolio-header-text:before {
+  right: 100%;
+  margin-right: 15px;
+}
+
+.portfolio-header-text:after {
+  left: 100%;
+  margin-left: 15px;
+}*/
+
+.portfolio-header-container {
+  text-align: center;
+  margin-top: 5%;
 }
 
 /*****************************
@@ -83,7 +156,13 @@ body {
           Projects - Content
 ******************************/
 
-.project-title {
+.project-title-container {
+  margin-top: 10%;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.project-title-text {
   font-size: 2.7em;
   color: #1d1d1d !important;
   line-height: 1.2em;
@@ -127,5 +206,10 @@ body {
 }
 @media screen and (min-width: 600px) {
   .project-image {
+  }
+  .hero-content-left {
+  }
+
+  .hero-content-right {
   }
 }
