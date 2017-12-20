@@ -25,25 +25,46 @@ body {
   display: block;
 }
 
+.hero-content-container {
+  text-align: center;
+}
+
 .hero-content-left {
-  width: 50%;
-}
-
-.hero-content-right {
-  width: 50%;
-}
-
-.hero-content {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  width: 50%;
+  top: 10%;
+  left: 1%;
 }
 
 .hero-content-right {
+  position: absolute;
+  width: 50%;
+  top: 10%;
+  right: 1%;
 }
 
-.hero-content-left {
+.hero-content-info {
+  display: none;
+}
+
+.hero-content-header {
+  position: absolute;
+  bottom: -2%;
+}
+
+.hero-content-right .hero-content-header {
+  right: 5%;
+  left: 20%;
+  white-space: nowrap;
+}
+
+.hero-content-left .hero-content-header {
+  right: 20%;
+  left: 5%;
+}
+
+.hero-icon {
+  margin-bottom: 0;
 }
 /*****************************
           About Me
