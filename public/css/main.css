@@ -14,6 +14,14 @@ body {
   max-width: 100%;
 }
 
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 /*****************************
           HERO
 ******************************/
@@ -43,10 +51,6 @@ body {
   right: 1%;
 }
 
-.hero-content-info {
-  display: none;
-}
-
 .hero-content-header {
   position: absolute;
   bottom: -2%;
@@ -69,6 +73,11 @@ body {
 /*****************************
           About Me
 ******************************/
+
+.about-me {
+  position: absolute;
+  top: 0%;
+}
 
 .about-me-header {
   font-size: 2.7em;
@@ -233,12 +242,34 @@ body {
   font-size: 1.5em;
 }
 
-@media screen and (min-width: 600px) {
-  .project-image {
-  }
-  .hero-content-left {
-  }
+.project-links span:hover {
+  color: #5b6b7b;
+}
 
-  .hero-content-right {
-  }
+/*****************************
+          Projects - Content
+******************************/
+
+.footer-links-container {
+  text-align: center;
+  background: #f7fafc;
+  position: relative;
+}
+
+.footer-links-container li {
+  display: inline-block;
+}
+
+.email {
+  position: absolute;
+  top: 30%;
+  color: #8899aa;
+  font-weight: bold;
+}
+
+.footer-links-container span:hover {
+  color: #5b6b7b;
+}
+
+@media screen and (min-width: 600px) {
 }
