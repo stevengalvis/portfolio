@@ -54,6 +54,14 @@ a {
 .skillset-content {
   margin-top: 0;
 }
+
+.skillset-content-header{
+  font-size: 2em;
+}
+
+.skillset-content-info {
+  font-size: 1.5em;
+}
 /*****************************
           About Me
 ******************************/
@@ -114,7 +122,7 @@ a {
 
 .project-stack-text {
   color: #1d1d1d;
-  font-size: 2em;
+  font-size: 3em;
 }
 
 /*****************************
@@ -150,7 +158,7 @@ a {
 }
 
 .project-title-text {
-  font-size: 2.7em;
+  font-size: 3.7em;
   color: #1d1d1d !important;
   line-height: 1.2em;
   font-weight: 500;
@@ -169,6 +177,10 @@ a {
 
 .project-about {
   color: #8899aa;
+}
+
+.project-about p {
+  font-size: 1.7em;
 }
 
 .project-header {
