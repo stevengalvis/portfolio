@@ -23,8 +23,9 @@ a {
 }
 
 /*****************************
-          HERO
+          banner
 ******************************/
+
 .banner-container {
   position: relative;
 }
@@ -33,51 +34,29 @@ a {
   display: block;
 }
 
-.hero-content-container {
+/*****************************
+          skillset
+******************************/
+
+.skillset-content-container {
   text-align: center;
 }
 
-.hero-content-left {
-  position: absolute;
-  width: 50%;
-  top: 10%;
-  left: 1%;
-}
-
-.hero-content-right {
-  position: absolute;
-  width: 50%;
-  top: 10%;
-  right: 1%;
-}
-
-.hero-content-header {
-  position: absolute;
-  bottom: -2%;
-}
-
-.hero-content-right .hero-content-header {
-  right: 5%;
-  left: 20%;
+.skillset-content-right .skillset-content-header {
   white-space: nowrap;
 }
 
-.hero-content-left .hero-content-header {
-  right: 20%;
-  left: 5%;
+.skillset-icon {
+  margin-bottom: 0;
+  margin-top: 5%;
 }
 
-.hero-icon {
-  margin-bottom: 0;
+.skillset-content {
+  margin-top: 0;
 }
 /*****************************
           About Me
 ******************************/
-
-.about-me {
-  position: absolute;
-  top: 0%;
-}
 
 .about-me-header {
   font-size: 2.7em;
@@ -97,6 +76,15 @@ a {
   max-width: 20em;
 }
 
+.bitmoji {
+  max-height: 250px;
+}
+
+.about-me-image-container {
+  position: absolute;
+  top: 2%;
+}
+
 /*****************************
           Portfolio Header
 ******************************/
@@ -110,27 +98,6 @@ a {
   padding-top: 0em;
   max-width: 20em;
 }
-
-/*.portfolio-header-text:before,
-.portfolio-header-text:after {
-  content: "";
-  position: absolute;
-  height: 5px;
-  border-bottom: 1px solid black;
-  border-top: 1px solid black;
-  top: 0;
-  width: 600px;
-}
-
-.portfolio-header-text:before {
-  right: 100%;
-  margin-right: 15px;
-}
-
-.portfolio-header-text:after {
-  left: 100%;
-  margin-left: 15px;
-}*/
 
 .portfolio-header-container {
   text-align: center;
@@ -271,5 +238,67 @@ a {
   color: #5b6b7b;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 500px) {
+  .bitmoji {
+    max-height: none;
+  }
 }
+
+@media screen and (min-width: 650px) {
+  .about-me {
+    position: absolute;
+    top: 2%;
+  }
+  .about-me-image-container {
+    position: static;
+  }
+
+  .about-me-text {
+    font-size: 1.5em;
+    color: #1d1d1d !important;
+    line-height: 1.2em;
+    font-weight: 500;
+    margin: 0 auto;
+    padding-top: 0.5em;
+    max-width: none;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .about-me {
+    top: 5%;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .about-me {
+    top: 20%;
+  }
+  .about-me-text {
+    font-size: 1.7em;
+  }
+  .skillset-icon {
+    max-height: 300px;
+    margin-top: 10%;
+  }
+  .skillset-content-container {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .about-me {
+    left: 10%;
+    top: 10%;
+  }
+  .about-me-text {
+    font-size: 2em;
+    max-width: 30em;
+  }
+}
+
+
+@media screen and (min-width: 1500px) {
+  .about-me {
+    left: 20%;
+  }
