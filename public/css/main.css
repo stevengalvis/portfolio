@@ -236,14 +236,14 @@ a {
 }
 
 .footer-links-container li {
-  display: inline-block;
+  display: block;
+  margin: 10px 20px;
 }
 
-.email {
-  position: absolute;
-  top: 30%;
+.footer-link {
   color: #8899aa;
   font-weight: bold;
+
 }
 
 .footer-links-container span:hover {
@@ -254,6 +254,10 @@ a {
   .bitmoji {
     max-height: none;
   }
+  .footer-links-container li {
+    display: inline-block;
+  }
+
 }
 
 @media screen and (min-width: 650px) {
@@ -266,9 +270,9 @@ a {
   }
 
   .about-me-text {
-    font-size: 1.5em;
+    font-size: 1.2em;
     color: #1d1d1d !important;
-    line-height: 1.2em;
+    line-height: 1.5em;
     font-weight: 500;
     margin: 0 auto;
     padding-top: 0.5em;
@@ -284,10 +288,11 @@ a {
 
 @media screen and (min-width: 800px) {
   .about-me {
-    top: 20%;
+    top: 15%;
   }
   .about-me-text {
     font-size: 1.7em;
+    line-height: 1.2em;
   }
   .skillset-icon {
     max-height: 300px;
